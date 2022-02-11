@@ -8,20 +8,52 @@
     <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <h3>
+    <h1>
         <div id="generate_el">Generate a</div>
         <div id="password_el">random password</div>
-    </h3>
+    </h1>
+
     <p id="paragraph_el">Never use an insecure password again.</p>
     
-    <p></p>
 
-    <button id="button_el">
-        <span id="icon_el"><img src="./images/flash-outline.svg"></span>
-        <span id="button-name_el">Generate password</span>
+
+    <!--
+        The "Generate password" button
+    -->
+
+    <button id="button_el" type="button">
+        <span class="icon_el">
+           <ion-icon name="flash-outline"></ion-icon>
+        </span>
+        <span class="buttonname_el">Generate passwords</span>
     </button>
 
 
+
+    <!--
+        The Seperator
+    -->
+
+    <div class="border_el"></div>
+
+
+
+    <!--Results will be displayed in these rectangles-->
+    <div id="results_el1">
+        <span class="rectangle_el">sample output</span>
+        <span class="rectangle_el">sample output</span>
+    </div>
+    <div id="results_el2">
+        <span class="rectangle_el">sample output</span>
+        <span class="rectangle_el">sample output</span>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="index.js"></script>
+
+
+
 </body>
 </html>
