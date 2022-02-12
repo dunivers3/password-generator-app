@@ -23,7 +23,7 @@
         The "Generate password" button
     -->
 
-    <button id="button_el" type="button">
+    <button id="button_el" onclick="genPass()"  type="button">
         <span class="icon_el">
            <ion-icon name="flash-outline"></ion-icon>
         </span>
@@ -42,18 +42,18 @@
 
     <!--Results will be displayed in these rectangles-->
     <div id="results_el1">
-        <span class="rectangle_el">sample output</span>
-        <span class="rectangle_el">sample output</span>
+        <span class="rectangle_el"> </span>
+        <span class="rectangle_el"> </span>
     </div>
     <div id="results_el2">
-        <span class="rectangle_el">sample output</span>
-        <span class="rectangle_el">sample output</span>
+        <span id="rectangle_el" class="rectangle_el"></span>
+        <span class="rectangle_el"></span>
     </div>
 
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
+
     <script src="index.js"></script>
 
 
