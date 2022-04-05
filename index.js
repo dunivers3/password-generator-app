@@ -10,10 +10,15 @@ let boxEl4 = document.getElementById("box_4");
 
 
 
+document.getElementById("button_el").addEventListener("click", generate)
+
 //GENERATE PASSWORD (CLICKED!)
 function generate(){
+        boxEl1.textContent = "";
+        boxEl2.textContent = "";
+        boxEl3.textContent = "";
+        boxEl4.textContent = "";
     for(i = 0; i < 15; i ++){
-        boxEl1.textContent += "";
         boxEl1.textContent += passwordChars[randomCharGenerator()];
         boxEl1.style.color = "#55F991";
         boxEl2.textContent += passwordChars[randomCharGenerator()];
@@ -34,7 +39,7 @@ function randomCharGenerator(){
 
 //Whats left
 
-// Generating the a random/ user preference password length
+// Generating a random user preference password length
 
 // Have the app reset on each "Generate password " button press
 
